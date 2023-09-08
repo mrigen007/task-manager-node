@@ -4,9 +4,6 @@ const app = express();
 const port = process.env.PORT || 3000;
 const tasks = require("./routes/task");
 require("dotenv").config();
-// app.get("/", (req, res, next) => {
-//   res.send("Hello");
-// });
 app.use(express.json());
 app.use("/api/v1/task", tasks);
 
